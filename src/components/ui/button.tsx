@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md hover:shadow-lg",
+        default: "bg-primary text-charcoal hover:bg-primary-glow hover:text-charcoal shadow-md hover:shadow-lg font-semibold",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-primary text-foreground bg-background hover:bg-primary hover:text-primary-foreground",
+        outline: "border border-primary text-cream bg-transparent hover:bg-primary hover:text-charcoal",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:bg-primary-glow hover:shadow-[0_0_30px_rgba(183,154,107,0.5)] transition-all duration-300 text-base font-semibold py-6 px-8",
-        cta: "bg-primary text-primary-foreground hover:bg-primary-glow hover:scale-105 shadow-lg transition-all duration-300 font-semibold uppercase tracking-wide",
+        hero: "bg-primary text-charcoal hover:bg-primary-glow hover:text-charcoal hover:shadow-[0_0_30px_rgba(183,154,107,0.5)] transition-all duration-300 text-base font-semibold py-6 px-8",
+        cta: "bg-primary text-charcoal hover:bg-primary-glow hover:text-charcoal hover:scale-105 shadow-lg transition-all duration-300 font-semibold uppercase tracking-wide",
       },
       size: {
         default: "h-10 px-4 py-2",

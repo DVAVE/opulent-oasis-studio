@@ -99,9 +99,9 @@ const Services = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {nailServices.map((service, index) => (
                   <div key={index} className="bg-background p-6 rounded-lg hover-lift border border-border">
-                    <h3 className="font-heading text-2xl text-cream mb-2">{service.name}</h3>
+                    <h3 className="font-heading text-2xl text-foreground-dark mb-2">{service.name}</h3>
                     <p className="text-primary font-semibold text-xl mb-3">{service.price}</p>
-                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                    <p className="text-foreground-dark mb-6">{service.description}</p>
                     <Button asChild variant="default" size="sm" className="w-full">
                       <Link to="/book">Book This Service</Link>
                     </Button>
@@ -115,9 +115,9 @@ const Services = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {beautyServices.map((service, index) => (
                   <div key={index} className="bg-background p-6 rounded-lg hover-lift border border-border">
-                    <h3 className="font-heading text-2xl text-cream mb-2">{service.name}</h3>
+                    <h3 className="font-heading text-2xl text-foreground-dark mb-2">{service.name}</h3>
                     <p className="text-primary font-semibold text-xl mb-3">{service.price}</p>
-                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                    <p className="text-foreground-dark mb-6">{service.description}</p>
                     <Button asChild variant="default" size="sm" className="w-full">
                       <Link to="/book">Book This Service</Link>
                     </Button>
@@ -132,18 +132,18 @@ const Services = () => {
                 {comboPackages.map((pkg, index) => (
                   <div key={index} className="bg-background p-8 rounded-lg hover-lift border-2 border-primary">
                     <div className="mb-6">
-                      <h3 className="font-heading text-3xl text-cream mb-2">{pkg.name}</h3>
+                      <h3 className="font-heading text-3xl text-foreground-dark mb-2">{pkg.name}</h3>
                       <p className="text-primary font-bold text-2xl mb-3">{pkg.price}</p>
-                      <p className="text-muted-foreground text-lg">{pkg.description}</p>
+                      <p className="text-foreground-dark text-lg">{pkg.description}</p>
                     </div>
                     
                     <div className="mb-6">
-                      <h4 className="font-semibold text-cream mb-3">Package Includes:</h4>
+                      <h4 className="font-semibold text-foreground-dark mb-3">Package Includes:</h4>
                       <ul className="space-y-2">
                         {pkg.included.map((item, i) => (
                           <li key={i} className="flex items-start gap-2">
                             <span className="text-primary mt-1">✓</span>
-                            <span className="text-muted-foreground">{item}</span>
+                            <span className="text-foreground-dark">{item}</span>
                           </li>
                         ))}
                       </ul>

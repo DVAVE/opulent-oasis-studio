@@ -158,8 +158,8 @@ const MobileStudio = () => {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-heading text-xl text-cream mb-2">{service.name}</h3>
-                    <p className="text-muted-foreground text-sm">{service.description}</p>
+                    <h3 className="font-heading text-xl text-foreground-dark mb-2">{service.name}</h3>
+                    <p className="text-foreground-dark text-sm">{service.description}</p>
                   </div>
                 </div>
               </div>

@@ -113,7 +113,7 @@ const BookNow = () => {
             <div className="bg-background p-8 rounded-lg shadow-xl">
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-6">
-                  <h2 className="font-heading text-3xl text-cream">Request Appointment</h2>
+                  <h2 className="font-heading text-3xl text-foreground-dark">Request Appointment</h2>
                   <span className="text-primary font-semibold">Step {step} of 4</span>
                 </div>
 
@@ -130,7 +130,7 @@ const BookNow = () => {
                 {/* Step 1: Choose Service */}
                 {step === 1 && (
                   <div className="animate-fade-in space-y-4">
-                    <Label htmlFor="service" className="text-lg font-semibold text-cream">
+                    <Label htmlFor="service" className="text-lg font-semibold text-foreground-dark">
                       Choose Your Service
                     </Label>
                     <Select value={formData.service} onValueChange={(value) => setFormData({ ...formData, service: value })}>
@@ -151,7 +151,7 @@ const BookNow = () => {
                 {/* Step 2: Choose Location */}
                 {step === 2 && (
                   <div className="animate-fade-in space-y-4">
-                    <Label htmlFor="location" className="text-lg font-semibold text-cream">
+                    <Label htmlFor="location" className="text-lg font-semibold text-foreground-dark">
                       Choose Location
                     </Label>
                     <Select value={formData.location} onValueChange={(value) => setFormData({ ...formData, location: value })}>
@@ -175,7 +175,7 @@ const BookNow = () => {
                 {step === 3 && (
                   <div className="animate-fade-in space-y-6">
                     <div className="space-y-2">
-                      <Label htmlFor="date" className="text-lg font-semibold text-cream">
+                      <Label htmlFor="date" className="text-lg font-semibold text-foreground-dark">
                         Preferred Date
                       </Label>
                       <Input
@@ -189,7 +189,7 @@ const BookNow = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="time" className="text-lg font-semibold text-cream">
+                      <Label htmlFor="time" className="text-lg font-semibold text-foreground-dark">
                         Preferred Time
                       </Label>
                       <Select value={formData.time} onValueChange={(value) => setFormData({ ...formData, time: value })}>
@@ -212,7 +212,7 @@ const BookNow = () => {
                 {step === 4 && (
                   <div className="animate-fade-in space-y-6">
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-lg font-semibold text-cream">
+                      <Label htmlFor="name" className="text-lg font-semibold text-foreground-dark">
                         Full Name *
                       </Label>
                       <Input
@@ -227,7 +227,7 @@ const BookNow = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-lg font-semibold text-cream">
+                      <Label htmlFor="email" className="text-lg font-semibold text-foreground-dark">
                         Email Address *
                       </Label>
                       <Input
@@ -242,7 +242,7 @@ const BookNow = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-lg font-semibold text-cream">
+                      <Label htmlFor="phone" className="text-lg font-semibold text-foreground-dark">
                         Phone Number *
                       </Label>
                       <Input
@@ -257,7 +257,7 @@ const BookNow = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="notes" className="text-lg font-semibold text-cream">
+                      <Label htmlFor="notes" className="text-lg font-semibold text-foreground-dark">
                         Additional Notes (Optional)
                       </Label>
                       <Textarea
@@ -301,13 +301,13 @@ const BookNow = () => {
             {/* Right Column - Contact Details */}
             <div className="space-y-8">
               <div className="bg-background p-8 rounded-lg shadow-xl">
-                <h3 className="font-heading text-2xl text-cream mb-6">Contact Details</h3>
+                <h3 className="font-heading text-2xl text-foreground-dark mb-6">Contact Details</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-cream mb-1">Phone</h4>
+                      <h4 className="font-semibold text-foreground-dark mb-1">Phone</h4>
                       <p className="text-muted-foreground">078 325 4622</p>
                     </div>
                   </div>
@@ -315,7 +315,7 @@ const BookNow = () => {
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-cream mb-1">Email</h4>
+                      <h4 className="font-semibold text-foreground-dark mb-1">Email</h4>
                       <p className="text-muted-foreground">info@opulentoasis.com</p>
                     </div>
                   </div>
@@ -323,7 +323,7 @@ const BookNow = () => {
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-cream mb-1">Studio Address</h4>
+                      <h4 className="font-semibold text-foreground-dark mb-1">Studio Address</h4>
                       <p className="text-muted-foreground">
                         Luxury Beauty District<br />
                         Johannesburg, South Africa
@@ -334,13 +334,13 @@ const BookNow = () => {
               </div>
 
               <div className="bg-background p-8 rounded-lg shadow-xl">
-                <h3 className="font-heading text-2xl text-cream mb-6">Operating Hours</h3>
+                <h3 className="font-heading text-2xl text-foreground-dark mb-6">Operating Hours</h3>
                 
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                     <div className="flex-1">
-                      <p className="text-cream font-medium">Monday - Friday</p>
+                      <p className="text-foreground-dark font-medium">Monday - Friday</p>
                       <p className="text-muted-foreground text-sm">9:00 AM - 7:00 PM</p>
                     </div>
                   </div>
@@ -348,7 +348,7 @@ const BookNow = () => {
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                     <div className="flex-1">
-                      <p className="text-cream font-medium">Saturday</p>
+                      <p className="text-foreground-dark font-medium">Saturday</p>
                       <p className="text-muted-foreground text-sm">9:00 AM - 6:00 PM</p>
                     </div>
                   </div>
@@ -356,7 +356,7 @@ const BookNow = () => {
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary flex-shrink-0" />
                     <div className="flex-1">
-                      <p className="text-cream font-medium">Sunday</p>
+                      <p className="text-foreground-dark font-medium">Sunday</p>
                       <p className="text-muted-foreground text-sm">10:00 AM - 4:00 PM</p>
                     </div>
                   </div>
